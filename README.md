@@ -7,8 +7,25 @@
 
 ## tsconfig edit
 
-- `"module": "commonjs"` add
+```json
+{
+  "compilerOptions":{
+    ...
+    "module": "commonjs"
+  }
+}
+```
 
 ## npm run start setting
 
-- `"start": "nodemon --watch 'src/**' --exec 'ts-node' src/server.ts"` add
+```json
+{
+  ...
+  "scripts": {
+    "start": "nodemon --watch 'src/**' --exec 'ts-node' src/server.ts",
+    ...
+  }
+}
+
+
+```
